@@ -1,0 +1,237 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="robot-arm.js"></script>
+        <script>
+            //Robotarm bibliotheek inladen
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            //Het level inladen
+            robotArm.loadLevel("exercise 12");
+            robotArm.speed= 1000
+            
+            
+            // Jou instructies volgen hier
+            
+            //blok 1
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 2
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 3
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 4
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 5
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 6
+            
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 7
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 8
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 9
+
+            robotArm.grab();
+            color = robotArm.scan();
+
+             if (color == "red"){
+            robotArm.moveRight();
+            robotArm.moveRight();
+            robotArm.drop();
+            robotArm.moveLeft();
+            }
+
+            else {
+            robotArm.drop();
+            robotArm.moveRight();
+            }
+
+            //blok 10
+
+     
+            //Run
+            robotArm.run();
+        </script>
+    </body>
+</html>
